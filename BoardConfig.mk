@@ -78,3 +78,6 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
