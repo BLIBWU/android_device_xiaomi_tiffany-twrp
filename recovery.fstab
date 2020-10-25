@@ -6,7 +6,7 @@
 /data            ext4              /dev/block/bootdevice/by-name/userdata   flags=encryptable=footer
 /modem_image     emmc              /dev/block/bootdevice/by-name/modem      flags=backup=1;display="Modem";flashimg
 /vendor          ext4              /dev/block/bootdevice/by-name/cust       flags=display="Cust/Vendor";backup=1;wipeingui
-/vendor_image	   emmc	             /dev/block/bootdevice/by-name/cust			  flags=display="Cust/Vendor Image";backup=1
+/vendor_image    emmc              /dev/block/bootdevice/by-name/cust       flags=display="Cust/Vendor Image";backup=1
 /cache           ext4              /dev/block/bootdevice/by-name/cache      flags=display="Cache";backup=1;wipeingui
 /splash          emmc              /dev/block/bootdevice/by-name/splash     flags=display="Splash";backup=1;flashimg=1
 
@@ -54,6 +54,6 @@
 /syscfg          emmc              /dev/block/bootdevice/by-name/syscfg     flags=backup=1;subpartitionof=/config
 
 # Partition on external removable devices
-/storage         ext4              /data/media/0                  		     	flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
+/storage         ext4              /data/media/0                            flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
 /sdcard1         auto              /dev/block/mmcblk1p1                     flags=display="MicroSD";storage;wipeingui;removable;andsec
 /usb-otg         auto              /dev/block/sda1                          flags=display="USB-OTG";storage;wipeingui;removable
